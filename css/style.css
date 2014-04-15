@@ -1,7 +1,23 @@
-.homepage-text {
+* {
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+.landingPage {
+	height:100%;
+	background-image:url(../images/landingpage.jpg);
+	background-size:cover;
+	background-attachment:fixed;
+	background-position: top center;
+  background-repeat: no-repeat;
+}
+.lightBlueMask {
 	position:absolute;
-	top:50%;
+	height:100%;
+	width:100%;
+	background-color:rgba(0,193,255, 0.6);
+}
+.homepage-text {
+	position:relative;
 	height:400px;
 	width:100%;
-	margin-top:-200px;
 }
