@@ -1,0 +1,84 @@
+* {
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+@font-face {
+	font-family: 'bariol-regular';
+	src:url(../fonts/Bariol_Regular.otf);
+}
+body {
+	font-size:12px;
+	font-family:'bariol-regular', Helvetica;
+}
+h1 {
+	font-size:6em;
+}
+h3 {
+	font-size:3em;
+}
+.landingPage {
+	height:100%;
+	background-image:url(../images/tail.jpg);
+	background-size:cover;
+	background-attachment:fixed;
+	background-position: top center;
+  background-repeat: no-repeat;
+}
+.lightBlueMask {
+	position:absolute;
+	margin-left:-5px;
+	height:100%;
+	width:100%;
+	background-color:rgba(37,80,166, 0.8);
+}
+
+.homepage-text {
+	position:absolute;
+	width:100%;
+	bottom:5%;
+}
+.homepage-text h1, .homepage-text h3 {
+	text-align:right;
+	color:#fff;
+}
+.homepage-img {
+	position:absolute;
+	width:100%;
+	bottom:0px;
+}
+.navbar {
+	height:100%;
+	width:60%;
+	background-color:rgba(0, 0, 0, 0.6);
+}
+
+.hobby-item {
+	position:absolute;
+	border:0.5em solid #000;
+	border-radius:0.2em 0.2em;
+	height:8em;
+	width:8em;
+	cursor:pointer;
+}
+.hobby-item-basketball {
+	top:50%;
+	margin-top:-4em;
+	right:0px;
+	background-image:url(../images/basketball-icon.png);
+	background-color:black;
+	background-position: center center;
+	background-size:cover;
+}
+.hobby-item-basketball:hover {
+	background-color:#FFF;
+}
+
+.hobby-item-nthgen {
+	top:50%;
+	margin-top:-4em;
+	left:0px;
+	background-image:url(../images/nthgen.png);
+	background-color:black;
+	background-position: center center;
+	background-size:cover;
+}
