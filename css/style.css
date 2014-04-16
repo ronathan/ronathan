@@ -2,6 +2,20 @@
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 }
+@font-face {
+	font-family: 'bariol-regular';
+	src:url(../fonts/Bariol_Regular.otf);
+}
+body {
+	font-size:12px;
+	font-family:'bariol-regular', Helvetica;
+}
+h1 {
+	font-size:6em;
+}
+h3 {
+	font-size:3em;
+}
 .landingPage {
 	height:100%;
 	background-image:url(../images/landingpage.jpg);
@@ -14,10 +28,20 @@
 	position:absolute;
 	height:100%;
 	width:100%;
-	background-color:rgba(0,193,255, 0.6);
+	background-color:rgba(37,80,166, 0.6);
 }
 .homepage-text {
-	position:relative;
-	height:400px;
+	position:absolute;
+	height:50%;
 	width:100%;
+	top:10%;
+}
+.homepage-text h1, .homepage-text h3 {
+	color:#fff;
+}
+
+.homepage-img {
+	position:absolute;
+	width:100%;
+	bottom:0px;
 }

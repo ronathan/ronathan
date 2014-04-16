@@ -53,4 +53,18 @@ img {
 	.grid-10 {  width: 815px; }
 	.grid-11 {  width: 897px; }
 	.grid-12 {  width: 980px; }
+
+	/* Grid Layout System in Percentages77/9.9.*/
+	.grid-1 { width: 7.857%; }
+	.grid-2 {  width: 16.224%; }
+	.grid-3 {  width: 24.592%; }
+	.grid-4 {  width: 32.959%; }
+	.grid-5 {  width: 41.327%; }
+	.grid-6 {  width: 49.694%; }
+	.grid-7 {  width: 58.061%; }
+	.grid-8 {  width: 66.429%; }
+	.grid-9 {  width: 74.796%; }
+	.grid-10 {  width: 83.163%; }
+	.grid-11 {  width: 91.531%; }
+	.grid-12 {  width: 100%; }
 }
