@@ -16,9 +16,11 @@ h1 {
 h3 {
 	font-size:3em;
 }
+
+/* Landing Page Styling */
 .landingPage {
 	height:100%;
-	background-image:url(../images/tail.jpg);
+	/*background-image:url(../images/tail.jpg);*/
 	background-size:cover;
 	background-attachment:fixed;
 	background-position: top center;
@@ -32,16 +34,27 @@ h3 {
 	background-color:rgba(73,198,235, 0.9);
 }
 
-.homepage-text {
+.homepage-container {
 	position:absolute;
+	height:auto;
 	width:100%;
 	bottom:5%;
-	background-color:#4FC6EB;
-	padding-right:10%;
-	border:0.5em solid #FFF;
+	background-color:#FFF;
+	border:0.5em solid #4FC6EB;
+	padding:0.5em;
 	border-radius:1em;
 }
+.homepage-text {
+	position:relative;
+	height:100%;
+	width:100%;
+	margin:0;
+	background-color:#4FC6EB;
+	padding-right:10%;
+	border-radius:0.5em;
+}
 .homepage-text h1, .homepage-text h3 {
+	margin-top:0;
 	text-align:right;
 	color:#fff;
 }
@@ -50,12 +63,37 @@ h3 {
 	width:100%;
 	bottom:0px;
 }
+
+/* NAVBAR */
+#navbar {
+	opacity:0;
+}
 .navbar {
+	position:static;
+	height:30px;
+	width:100%;
+	bottom:5px;
+	z-index:1000;
+	background-color:rgba(73, 198, 235, 0.9);
+}
+.navbar > div.navbar-item {
 	height:100%;
-	width:60%;
-	background-color:rgba(0, 0, 0, 0.6);
+	width:19.5%;
+	margin:0;
+	color:#FFF;
+	text-align:center;
+	font-weight:500;
+	font-size:1.2em;
+	display:inline-block;
+	vertical-align:middle;
+	line-height:30px;
+	cursor:pointer;
+}
+.navbar-text:hover {
+	border-bottom:2px solid #FFF;
 }
 
+/* ABOUT ME PAGE */
 .hobby-item {
 	position:absolute;
 	border-radius:2em 2em;
@@ -78,8 +116,8 @@ h3 {
 	margin-top:-4em;
 	left:32.5%;
 	background-image:url(../images/journal.png);
-	background-color:#F5F103;
-	border:0.5em solid #F5F103;
+	background-color:#FFE13C;
+	border:0.5em solid #FFE13C;
 }
 .hobby-item-mse {
 	top:25%;
