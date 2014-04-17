@@ -58,7 +58,6 @@ h3 {
 
 .hobby-item {
 	position:absolute;
-	border:0.5em solid #000;
 	border-radius:2em 2em;
 	height:8em;
 	width:8em;
@@ -69,45 +68,53 @@ h3 {
 .hobby-item-nthgen {
 	top:50%;
 	margin-top:-4em;
-	left:5%;
+	left:20%;
 	background-image:url(../images/nthgen.png);
 	background-color:#000;
+	border:0.5em solid #000;
 }
 .hobby-item-journal {
 	top:25%;
 	margin-top:-4em;
-	left:25%;
+	left:32.5%;
 	background-image:url(../images/journal.png);
-	background-color:#FFFB5E;
+	background-color:#F5F103;
+	border:0.5em solid #F5F103;
 }
 .hobby-item-mse {
 	top:25%;
 	margin-top:-4em;
-	right:25%;
+	right:32.5%;
 	background-image:url(../images/mse.png);
 	background-color:#49C6EB;
+	border:0.5em solid #49C6EB;
 }
 .hobby-item-basketball {
 	top:50%;
 	margin-top:-4em;
-	right:5%;
+	right:20%;
 	background-image:url(../images/basketball-icon.png);
+	background-color:#E54B0B;
+	border:0.5em solid #E54B0B;
 }
 .hobby-item-hackeryou {
 	top:75%;
 	margin-top:-4em;
-	right:25%;
+	right:32.5%;
 	background-image:url(../images/hackeryou.png);
+	border:0.5em solid #cf1e24;
 }
 .hobby-item-bucketlist {
 	top:75%;
 	margin-top:-4em;
-	left:25%;
+	left:32.5%;
 	background-image:url(../images/bucket.png);
+	background-color:#C2C2C2;
+	border:0.5em solid #C2C2C2;
 }
 
-.hobby-item-basketball:hover, 
+/*.hobby-item-basketball:hover, 
 .hobby-item-nthgen:hover, 
 .hobby-item-journal:hover {
 	background-color:#49C6EB;
-}
+}*/
