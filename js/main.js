@@ -3,9 +3,6 @@ $(function(){
   var landingPageMiddle = $('#aboutMe').offset().top * 0.50;
   var landingPageBottom = $('#aboutMe').offset().top;
 
-  console.log(landingPageMiddle);
-  console.log(landingPageBottom);
-
   $(window).scroll(function(){
     if($(window).scrollTop() < landingPageBottom) {
       $('#navbar').css('position', 'static');
@@ -15,8 +12,7 @@ $(function(){
     } else {
       $('#navbar').css('position', 'fixed');
       $('#navbar').css('top', '5px');
-      $('#navbar').css('margin-left', '-5px');
-      $('#navbar').css('opacity', '1');
+      $('#navbar').css('opacity', '0.9');
     }
   }); 
 
