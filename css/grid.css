@@ -19,6 +19,7 @@ img {
 @media (min-width: 768px) {
 	/* Columns */
 	.grid-container > [class^="grid-"] {
+		position:relative;
 		float:left;
 		min-height:1px; /* Prevents the columns from collapsing */
 /*		padding-left:5px;

@@ -8,16 +8,25 @@
 }
 body {
 	font-size:12px;
-	font-family:'bariol-regular', Helvetica;
+	font-family: Georgia, Arial, Helvetica;
 }
 h1 {
+	font-family:'Lora Bold', Georgia;
 	font-size:6em;
+	margin:0;
 }
 h2 {
+	font-family:'Lora Bold', Georgia;
 	font-size:4em;
+	margin:0;
 }
 h3 {
+	font-family:'Lora Bold', Georgia;
 	font-size:3em;
+	margin:0;
+}
+p {
+	margin:0;
 }
 
 /* Landing Page Styling */
@@ -91,6 +100,7 @@ h3 {
 	vertical-align:middle;
 	line-height:30px;
 	cursor:pointer;
+	font-family:'Lora Bold', Georgia;
 }
 .navbar-text:hover {
 	border-bottom:2px solid #FFF;
@@ -161,15 +171,38 @@ h3 {
 }*/
 
 /* Dev Section */
-.dev-item h2 {
-	text-align:center;
+.dev-item-frontend {
+	position:absolute;
+	left:100px;
+	width:50%;
+	max-width:500px;
+	top:50%;
+	height:230px;
+	margin-top:-115px;
+}
+.dev-item-backend {
+	position:absolute;
+	right:50px;
+	width:50%;
+	max-width:500px;
+	top:50%;
+	height:230px;
+	margin-top:-115px;
 }
 .front-end {
-	height:100%;
+	position:relative;
+	display:table;
+	padding: 0 5%;
+	height:50%;
+	width:100%;
 	background-color:#FAFAFA;
 }
 .back-end {
-	height:100%;
+	position:relative;
+	display:table;
+	padding: 0 5%;
+	height:50%;
+	width:100%;
 	background-color:#1C1E26;
-	color:#FFF;
+	color:#FAFAFA;
 }
