@@ -7,22 +7,22 @@
 	src:url(../fonts/Bariol_Regular.otf);
 }
 body {
-	font-size:12px;
-	font-family: Georgia, Arial, Helvetica;
+	font-size:14px;
+	font-family: 'Open Sans', 'sans-serif' Arial, Helvetica;
 }
 h1 {
-	font-family:'Lora Bold', Georgia;
-	font-size:6em;
-	margin:0;
-}
-h2 {
-	font-family:'Lora Bold', Georgia;
+	font-family:'Lora', Georgia;
 	font-size:4em;
 	margin:0;
 }
+h2 {
+	font-family:'Lora', Georgia;
+	font-size:2em;
+	margin:0;
+}
 h3 {
-	font-family:'Lora Bold', Georgia;
-	font-size:3em;
+	font-family:'Lora', Georgia;
+	font-size:1em;
 	margin:0;
 }
 p {
@@ -32,18 +32,18 @@ p {
 /* Landing Page Styling */
 .landingPage {
 	height:100%;
-	/*background-image:url(../images/tail.jpg);*/
-	background-size:cover;
+	background-image:url(../images/landingpage.png);
+	/*background-size:cover;*/
 	background-attachment:fixed;
 	background-position: top center;
-  background-repeat: no-repeat;
+  /*background-repeat: no-repeat;*/
 }
 .lightBlueMask {
 	position:absolute;
 	margin-left:-5px;
 	height:100%;
 	width:100%;
-	background-color:rgba(73,198,235, 0.9);
+	background-color:rgba(73,198,235, 0.8);
 }
 
 .homepage-container {
@@ -107,7 +107,7 @@ p {
 }
 
 /* ABOUT ME PAGE */
-.hobby-item {
+/*.hobby-item {
 	position:absolute;
 	border-radius:2em 2em;
 	height:8em;
@@ -115,8 +115,71 @@ p {
 	background-position: center center;
 	background-size:cover;
 	cursor:pointer;
+}*/
+.hobby-item-container {
+	position:absolute; 
+	height:auto; 
+	max-width: 792px; 
+	top:50%; 
+	left: 50%; 
+	margin-top:-264px; 
+	margin-left:-396px;
+}
+.hobby-item {
+	position:relative;
+	/*border-radius:2em 2em;*/
+	height:15em;
+	width:15em;
+	background-position: center center;
+	background-size:cover;
+	cursor:pointer;
+}
+.hobby-item {
+	position:relative;
+	/*border-radius:2em 2em;*/
+	float:left;
+	height:15em;
+	width:15em;
+	margin:1em;
+	background-position: center center;
+	background-size:cover;
+	cursor:pointer;
 }
 .hobby-item-nthgen {
+	background-image:url(../images/nthgen.png);
+	background-color:#000;
+	border:0.5em solid #000;
+}
+.hobby-item-journal {
+	background-image:url(../images/journal.png);
+	background-color:#FFE13C;
+	border:0.5em solid #FFE13C;
+}
+.hobby-item-mse {
+	background-image:url(../images/mse.png);
+	background-color:#49C6EB;
+	border:0.5em solid #49C6EB;
+}
+.hobby-item-basketball {
+	background-image:url(../images/basketball-icon.png);
+	background-color:#E54B0B;
+	border:0.5em solid #E54B0B;
+}
+.hobby-item-hackeryou {
+	background-image:url(../images/hackeryou.png);
+	border:0.5em solid #cf1e24;
+}
+.hobby-item-bucketlist {
+	background-image:url(../images/bucket.png);
+	background-color:#C2C2C2;
+	border:0.5em solid #C2C2C2;
+}
+.hobby-item-aboutme {
+	background-color:#FAFAFA;
+	border:0.5em solid #FAFAFA;
+	padding:1em;
+}
+/*.hobby-item-nthgen {
 	top:50%;
 	margin-top:-4em;
 	left:20%;
@@ -162,7 +225,7 @@ p {
 	background-image:url(../images/bucket.png);
 	background-color:#C2C2C2;
 	border:0.5em solid #C2C2C2;
-}
+}*/
 
 /*.hobby-item-basketball:hover, 
 .hobby-item-nthgen:hover, 
@@ -205,4 +268,23 @@ p {
 	width:100%;
 	background-color:#1C1E26;
 	color:#FAFAFA;
+}
+/* 2 Columns for ABOUT ME page */
+@media (max-width: 791px) {
+	.hobby-item-container {
+		margin-top:-396px;
+		margin-left:-264px;
+	}
+}
+
+/* 1 column for ABOUT ME page */
+@media (max-width: 527px) {
+	.hobby-item-container {
+		margin-top:-264px;
+		margin-left:-132px;
+	}
+	.hobby-item {
+		height:10em;
+		width:10em;
+	}
 }
