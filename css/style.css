@@ -17,7 +17,7 @@ h1 {
 }
 h2 {
 	font-family:'Lora', Georgia;
-	font-size:2em;
+	font-size:3em;
 	margin:0;
 }
 h3 {
@@ -116,27 +116,29 @@ p {
 	background-size:cover;
 	cursor:pointer;
 }*/
+#aboutMe {
+	/*background-color:#1C1E26;*/
+}
 .hobby-item-container {
 	position:absolute; 
 	height:auto; 
-	max-width: 792px; 
+	max-width: 714px; 
 	top:50%; 
 	left: 50%; 
-	margin-top:-264px; 
-	margin-left:-396px;
+	margin-top:-336px; 
+	margin-left:-357px;
 }
-.hobby-item {
+/*.hobby-item {
 	position:relative;
-	/*border-radius:2em 2em;*/
 	height:15em;
 	width:15em;
 	background-position: center center;
 	background-size:cover;
 	cursor:pointer;
-}
+	border-radius:1em;
+}*/
 .hobby-item {
 	position:relative;
-	/*border-radius:2em 2em;*/
 	float:left;
 	height:15em;
 	width:15em;
@@ -144,7 +146,11 @@ p {
 	background-position: center center;
 	background-size:cover;
 	cursor:pointer;
+	border-radius:1em;
 }
+/*.hobby-item:hover {
+	background-color:#000;
+}*/
 .hobby-item-nthgen {
 	background-image:url(../images/nthgen.png);
 	background-color:#000;
@@ -175,9 +181,12 @@ p {
 	border:0.5em solid #C2C2C2;
 }
 .hobby-item-aboutme {
-	background-color:#FAFAFA;
-	border:0.5em solid #FAFAFA;
+	background-color:#61A8B2;
+	border:0.5em solid #61A8B2;
 	padding:1em;
+	text-align:center;
+	color:#FFF;
+	background-image:url(../images/bucket.png);
 }
 /*.hobby-item-nthgen {
 	top:50%;
@@ -234,24 +243,6 @@ p {
 }*/
 
 /* Dev Section */
-.dev-item-frontend {
-	position:absolute;
-	left:100px;
-	width:50%;
-	max-width:500px;
-	top:50%;
-	height:230px;
-	margin-top:-115px;
-}
-.dev-item-backend {
-	position:absolute;
-	right:50px;
-	width:50%;
-	max-width:500px;
-	top:50%;
-	height:230px;
-	margin-top:-115px;
-}
 .front-end {
 	position:relative;
 	display:table;
@@ -259,6 +250,30 @@ p {
 	height:50%;
 	width:100%;
 	background-color:#FAFAFA;
+}
+.dev-item-frontend {
+	position:absolute;
+	float:left;
+	top:50%;
+	left:5%;
+	height:280px;
+	max-width:500px;
+	margin-top:-140px;
+}
+.macbook-container {
+	position:absolute;
+	float:right;
+	top:25%;
+	right:5%;
+	background-size:cover;
+	background-repeat:no-repeat;
+	background-position: center center;
+	min-height:1px;
+	width:300px;
+}
+.macbook-image {
+	height:auto;
+	width:100%;
 }
 .back-end {
 	position:relative;
@@ -268,6 +283,14 @@ p {
 	width:100%;
 	background-color:#1C1E26;
 	color:#FAFAFA;
+}
+.dev-item-backend {
+	position:absolute;
+	right:5%;
+	top:50%;
+	height:280px;
+	max-width:500px;
+	margin-top:-140px;
 }
 /* 2 Columns for ABOUT ME page */
 @media (max-width: 791px) {

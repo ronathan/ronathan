@@ -11,10 +11,6 @@ html, body, .ronathan-container {
 	height:100%;
 }
 
-img {
-	width:100%;
-}
-
 /* STANDARD BROWSERS*/
 @media (min-width: 768px) {
 	/* Columns */
