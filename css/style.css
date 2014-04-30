@@ -3,25 +3,25 @@
 	box-sizing: border-box;
 }
 @font-face {
-	font-family: 'bariol-regular';
-	src:url(../fonts/Bariol_Regular.otf);
+	font-family: 'Proxima Nova Bold';
+	src:url(../fonts/Proxima-Nova-Bold.otf);
 }
 body {
 	font-size:14px;
 	font-family: 'Open Sans', 'sans-serif' Arial, Helvetica;
 }
 h1 {
-	font-family:'Lora', Georgia;
+	font-family:'Proxima Nova Bold', 'Arial', 'Open Sans';
 	font-size:4em;
 	margin:0;
 }
 h2 {
-	font-family:'Lora', Georgia;
+	font-family:'Proxima Nova Bold', 'Arial', 'Open Sans';
 	font-size:3em;
 	margin:0;
 }
 h3 {
-	font-family:'Lora', Georgia;
+	font-family:'Proxima Nova Bold', 'Arial', 'Open Sans';
 	font-size:1em;
 	margin:0;
 }
