@@ -14,6 +14,24 @@ $(function(){
       $('#navbar').css('top', '5px');
       $('#navbar').css('opacity', '0.9');
     }
+
+    if($(window).scrollTop() >= landingPageMiddle) {
+      $('.hobby-item').each(function() {
+
+        var $this = $(this);
+
+        $this.parent().queue(function(n) {
+          $this.addClass('translateLeft');
+          $this.animate({opacity:1}, 300, n);
+        });
+
+      }).parent().promise().done();
+    } 
+    // else if($(window).scrollTop() < landingPageMiddle ) {
+    //   $('.hobby-item').css('opacity', '0');
+    //   $('.hobby-item').removeClass('translateLeft');
+    // }
+
   }); 
 
- });
+});

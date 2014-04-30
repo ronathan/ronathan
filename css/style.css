@@ -118,6 +118,8 @@ p {
 }*/
 #aboutMe {
 	/*background-color:#1C1E26;*/
+	position:relative;
+	perspective:3300px;
 }
 .hobby-item-container {
 	position:absolute; 
@@ -127,17 +129,40 @@ p {
 	left: 50%; 
 	margin-top:-336px; 
 	margin-left:-357px;
+	/*-webkit-transform: translateX(200px);
+  -ms-transform: translateX(200px);
+  -o-transform: translateX(200px);
+  transform: translateX(200px);
+  opacity:0;
+  -webkit-animation: start 2s ease-out forwards;
+  -moz-animation: start 2s ease-out forwards;
+  -o-animation: start 2s ease-out forwards;
+  animation: start 2s ease-out forwards;*/
 }
-/*.hobby-item {
-	position:relative;
-	height:15em;
-	width:15em;
-	background-position: center center;
-	background-size:cover;
-	cursor:pointer;
-	border-radius:1em;
-}*/
-.hobby-item {
+/*@-webkit-keyframes start{
+	0%{
+		-webkit-transform: translateX(200px);
+    -ms-transform: translateX(200px);
+    -o-transform: translateX(200px);
+    transform: translateX(200px);
+		opacity:0;
+	}
+	50%{
+		opacity:1;
+		-webkit-transform: translateX(0);
+    -ms-transform: translateX(0);
+    -o-transform: translateX(0);
+    transform: translateX(0);
+	}
+	100%{
+		-webkit-transform: translateX(0);
+    -ms-transform: translateX(0);
+    -o-transform: translateX(0);
+    transform: translateX(0);
+		opacity:1;
+	}
+}
+*/.hobby-item {
 	position:relative;
 	float:left;
 	height:15em;
@@ -147,6 +172,21 @@ p {
 	background-size:cover;
 	cursor:pointer;
 	border-radius:1em;
+	opacity:0;
+	-webkit-transform: translateX(100px);
+  -ms-transform: translateX(100px);
+  -o-transform: translateX(100px);
+  transform: translateX(100px);
+	-webkit-transition: -webkit-transform 0.6s ease-in-out;
+	-moz-transition: -moz-transform 1s ease-in-out;
+  -o-transition: -o-transform 1s ease-out;
+  transition: transform 1s ease-in-out;
+}
+.translateLeft {
+	-webkit-transform: translateX(0);
+  -ms-transform: translateX(0);
+  -o-transform: translateX(0);
+  transform: translateX(0);
 }
 /*.hobby-item:hover {
 	background-color:#000;
