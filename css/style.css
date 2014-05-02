@@ -168,19 +168,30 @@ p {
 	height:15em;
 	width:15em;
 	margin:1em;
+	background-color:#000;
 	background-position: center center;
 	background-size:cover;
 	cursor:pointer;
 	border-radius:1em;
 	opacity:0;
+	overflow:hidden;
+	
+	/* Animation for flying in */
 	-webkit-transform: translateX(100px);
   -ms-transform: translateX(100px);
   -o-transform: translateX(100px);
   transform: translateX(100px);
-	-webkit-transition: -webkit-transform 0.6s ease-in-out;
+
+  -webkit-transition: -webkit-transform 0.6s ease-in-out;
 	-moz-transition: -moz-transform 1s ease-in-out;
   -o-transition: -o-transform 1s ease-out;
   transition: transform 1s ease-in-out;
+
+  /* Animation for hover */
+	-webkit-transition: background-color 0.2s ease-out;
+	-moz-transition: background-color 0.2s ease-out;
+  -o-transition: background-color 0.2s ease-out;
+  transition: background-color 0.2s ease-out;
 }
 .translateLeft {
 	-webkit-transform: translateX(0);
@@ -188,13 +199,50 @@ p {
   -o-transform: translateX(0);
   transform: translateX(0);
 }
+.hobby-item:hover {
+	background-color:#FFF;
+	border-color:#FFF;
+}
 /*.hobby-item:hover {
 	background-color:#000;
 }*/
+.hobby-item div {
+  -webkit-transition: all .3s ease;
+	-moz-transition: all .3s ease;
+  -o-transition: all .3s ease;
+  transition: all .3s ease;
+}
 .hobby-item-nthgen {
+	position:absolute;
+	display:inline-block;
+	height:15em;
+	width:15em;
+	/*border-radius:1em;*/
+	background-position: center center;
+	background-size:cover;
 	background-image:url(../images/nthgen.png);
-	background-color:#000;
-	border:0.5em solid #000;
+}
+.nthgen-text {
+	position:absolute;
+	height:15em;
+	width:15em;
+	color:#000;
+	text-align:center;
+	display:table-cell;
+	vertical-align:middle;
+}
+.nthgen-text h2 {
+	display:table-cell;
+	vertical-align:middle;
+}
+.slideTextLeft div:nth-child(2){
+  left:100%;
+}
+.slideTextLeft:hover div {
+	-webkit-transform: translateX(-100%);
+  -ms-transform: translateX(-100%);
+  -o-transform: translateX(-100%);
+  transform: translateX(-100%);
 }
 .hobby-item-journal {
 	background-image:url(../images/journal.png);
