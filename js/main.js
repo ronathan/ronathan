@@ -3,7 +3,7 @@ $(function(){
   var landingPageMiddle = $('#aboutMe').offset().top * 0.50;
   var landingPageBottom = $('#aboutMe').offset().top;
 
-  $(window).scroll(function(){
+  $(window).scroll(function() {
     if($(window).scrollTop() < landingPageBottom) {
       $('#navbar').css('position', 'static');
       $('#navbar').css('margin-left', '0px');
