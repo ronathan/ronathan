@@ -27,9 +27,9 @@ html, body, .ronathan-container {
 		margin-left:0px;
 	}
 
-/*	.grid-container > [class^="grid-"]:last-child {
+	.grid-container > [class^="grid-"]:last-child {
 		float:right;
-	}*/
+	}
 
 	.grid-container:after {
 		content: " ";
