@@ -16,7 +16,7 @@ $(function(){
     }
 
     if($(window).scrollTop() >= landingPageMiddle) {
-      $('.hobby-item').each(function() {
+      $('.aboutme-item').each(function() {
 
         var $this = $(this);
 

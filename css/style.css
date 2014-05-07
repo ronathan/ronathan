@@ -107,7 +107,7 @@ p {
 }
 
 /* ABOUT ME PAGE */
-/*.hobby-item {
+/*.aboutme-item {
 	position:absolute;
 	border-radius:2em 2em;
 	height:8em;
@@ -121,7 +121,7 @@ p {
 	position:relative;
 	perspective:3300px;
 }
-.hobby-item-container {
+.aboutme-item-container {
 	position:absolute; 
 	height:auto; 
 	max-width: 714px; 
@@ -162,7 +162,7 @@ p {
 		opacity:1;
 	}
 }
-*/.hobby-item {
+*/.aboutme-item {
 	position:relative;
 	float:left;
 	height:15em;
@@ -199,41 +199,37 @@ p {
   -o-transform: translateX(0);
   transform: translateX(0);
 }
-.hobby-item:hover {
-	background-color:#FFF;
-	border-color:#FFF;
+.aboutme-item:hover {
+	/*background-color:#FFF !important;*/
 }
-/*.hobby-item:hover {
+/*.aboutme-item:hover {
 	background-color:#000;
 }*/
-.hobby-item div {
+.aboutme-item div {
   -webkit-transition: all .3s ease;
 	-moz-transition: all .3s ease;
   -o-transition: all .3s ease;
   transition: all .3s ease;
 }
-.hobby-item-nthgen {
+.aboutme-text {
 	position:absolute;
-	display:inline-block;
-	height:15em;
-	width:15em;
-	/*border-radius:1em;*/
-	background-position: center center;
-	background-size:cover;
-	background-image:url(../images/nthgen.png);
-}
-.nthgen-text {
-	position:absolute;
-	height:15em;
-	width:15em;
+	height:100%;
+	width:100%;
 	color:#000;
+	display:table;
+}
+.aboutme-text h2 {
 	text-align:center;
 	display:table-cell;
 	vertical-align:middle;
+	color:#FFF;
 }
-.nthgen-text h2 {
-	display:table-cell;
-	vertical-align:middle;
+.aboutme-background {
+	position:absolute;
+	height:100%;
+	width:100%;
+	background-position: center center;
+	background-size:cover;
 }
 .slideTextLeft div:nth-child(2){
   left:100%;
@@ -244,31 +240,29 @@ p {
   -o-transform: translateX(-100%);
   transform: translateX(-100%);
 }
-.hobby-item-journal {
+.aboutme-nthgen {
+	background-image:url(../images/nthgen.png);
+}
+.aboutme-journal {
 	background-image:url(../images/journal.png);
-	background-color:#FFE13C;
-	border:0.5em solid #FFE13C;
 }
-.hobby-item-mse {
+.aboutme-mse {
 	background-image:url(../images/mse.png);
-	background-color:#49C6EB;
-	border:0.5em solid #49C6EB;
 }
-.hobby-item-basketball {
+.aboutme-basketball {
 	background-image:url(../images/basketball-icon.png);
 	background-color:#E54B0B;
-	border:0.5em solid #E54B0B;
 }
-.hobby-item-hackeryou {
+.aboutme-hackeryou {
 	background-image:url(../images/hackeryou.png);
 	border:0.5em solid #cf1e24;
 }
-.hobby-item-bucketlist {
+.aboutme-bucketlist {
 	background-image:url(../images/bucket.png);
 	background-color:#C2C2C2;
 	border:0.5em solid #C2C2C2;
 }
-.hobby-item-aboutme {
+.aboutme-aboutme {
 	background-color:#61A8B2;
 	border:0.5em solid #61A8B2;
 	padding:1em;
@@ -276,7 +270,7 @@ p {
 	color:#FFF;
 	background-image:url(../images/bucket.png);
 }
-/*.hobby-item-nthgen {
+/*.aboutme-item-nthgen {
 	top:50%;
 	margin-top:-4em;
 	left:20%;
@@ -284,7 +278,7 @@ p {
 	background-color:#000;
 	border:0.5em solid #000;
 }
-.hobby-item-journal {
+.aboutme-item-journal {
 	top:25%;
 	margin-top:-4em;
 	left:32.5%;
@@ -292,7 +286,7 @@ p {
 	background-color:#FFE13C;
 	border:0.5em solid #FFE13C;
 }
-.hobby-item-mse {
+.aboutme-item-mse {
 	top:25%;
 	margin-top:-4em;
 	right:32.5%;
@@ -300,7 +294,7 @@ p {
 	background-color:#49C6EB;
 	border:0.5em solid #49C6EB;
 }
-.hobby-item-basketball {
+.aboutme-item-basketball {
 	top:50%;
 	margin-top:-4em;
 	right:20%;
@@ -308,14 +302,14 @@ p {
 	background-color:#E54B0B;
 	border:0.5em solid #E54B0B;
 }
-.hobby-item-hackeryou {
+.aboutme-item-hackeryou {
 	top:75%;
 	margin-top:-4em;
 	right:32.5%;
 	background-image:url(../images/hackeryou.png);
 	border:0.5em solid #cf1e24;
 }
-.hobby-item-bucketlist {
+.aboutme-item-bucketlist {
 	top:75%;
 	margin-top:-4em;
 	left:32.5%;
@@ -324,9 +318,9 @@ p {
 	border:0.5em solid #C2C2C2;
 }*/
 
-/*.hobby-item-basketball:hover, 
-.hobby-item-nthgen:hover, 
-.hobby-item-journal:hover {
+/*.aboutme-item-basketball:hover, 
+.aboutme-item-nthgen:hover, 
+.aboutme-item-journal:hover {
 	background-color:#49C6EB;
 }*/
 
@@ -398,7 +392,7 @@ p {
 }
 /* 2 Columns for ABOUT ME page */
 @media (max-width: 791px) {
-	.hobby-item-container {
+	.aboutme-item-container {
 		margin-top:-396px;
 		margin-left:-264px;
 	}
@@ -406,11 +400,11 @@ p {
 
 /* 1 column for ABOUT ME page */
 @media (max-width: 527px) {
-	.hobby-item-container {
+	.aboutme-item-container {
 		margin-top:-264px;
 		margin-left:-132px;
 	}
-	.hobby-item {
+	.aboutme-item {
 		height:10em;
 		width:10em;
 	}
