@@ -12,7 +12,7 @@ html, body, .ronathan-container {
 }
 
 /* STANDARD BROWSERS*/
-@media (min-width: 768px) {
+@media (min-width: 400px) {
 	/* Columns */
 	.grid-container > [class^="grid-"] {
 		position:relative;
