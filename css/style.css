@@ -9,6 +9,7 @@
 body {
 	font-size:14px;
 	font-family: 'Open Sans', 'sans-serif' Arial, Helvetica;
+	color:#000;
 }
 h1 {
 	font-family:'Proxima Nova Bold', 'Arial', 'Open Sans';
@@ -327,6 +328,7 @@ p {
 	height:100%;
 	width:50%;
 	background-color:#FAFAFA;
+	background-attachment:fixed;
 	background-image:url(../images/binding_light.png);
 	color:#404457;
 	margin:0;
@@ -364,6 +366,7 @@ p {
 	height:100%;
 	width:50%;
 	background-color:#404457;
+	background-attachment:fixed;
 	background-image:url(../images/binding_dark.png);
 	color:#E3E3E3;
 	margin:0;
@@ -390,16 +393,35 @@ p {
 	margin-top:-100px;
 }
 #projects-display {
-	height:auto;
+	position:relative;
+	height:863.5px;
 	width:100%; 
-	display:table-cell; 
-	vertical-align:middle;
+	margin:0 auto;
 	background-image:url(../images/front-end-imac2.png);
-	background-attachment:fixed;
+	/*background-attachment:fixed;*/
 	background-repeat:no-repeat;
-	background-size:contain;
+	background-size:cover;
 	background-position:center center;
 }
+.project-arrows {
+	display:table-cell; 
+	vertical-align:middle; 
+	font-size:6em;
+	cursor:pointer;
+}
+/*#inner-display {
+	position:absolute;
+	top:150px;
+	left:50%;
+	margin-left:-38%;
+	height:500px;
+	width:76%;
+	background-image:url(../images/beam.jpg);
+	background-attachment:fixed;
+	background-repeat:no-repeat;
+	background-size:cover;
+	background-position:center center;
+}*/
 /* 2 Columns for ABOUT ME page */
 /*@media (max-width: 791px) {
 	.aboutme-item-container {
