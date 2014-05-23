@@ -1,7 +1,7 @@
 $(function(){
   // Check the initial Poistion of  Sticky Header
   var landingPageMiddle = $('#aboutMe').offset().top * 0.50;
-  var projectsPageOffset = $('#projects-display').offset().top
+  var projectsPageOffset = $('#projects').offset().top
 
   // Effects for different sections on scroll
   $(window).scroll(function() {
@@ -21,11 +21,12 @@ $(function(){
     } 
 
     // Animate arrows in when you reach projects page
-    if( $(window).scrollTop() >= projectsPageOffset) {
-      $('.project-arrows').fadeIn();
-    } else {
-      $('.project-arrows').fadeOut();
-    }
+    // if( $(window).scrollTop() >= projectsPageOffset) {
+    //   $('.project-arrows').stop().animate({opacity:1}, 400);
+    //   console.log("THIS WAS HIT");
+    // } else if($(window).scrollTop() < projectsPageOffset) {
+    //   $('.project-arrows').stop().animate({opacity:0}, 400);
+    // }
   }); 
 
 });

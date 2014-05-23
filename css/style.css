@@ -393,35 +393,41 @@ p {
 	margin-top:-100px;
 }
 #projects-display {
-	position:relative;
-	height:863.5px;
-	width:100%; 
+	position:absolute;
+	height:750px;
+	width:900px; 
 	margin:0 auto;
+	top:50%;
+	left:50%;
+	margin-top:-375px;
+	margin-left:-450px;
 	background-image:url(../images/front-end-imac2.png);
 	/*background-attachment:fixed;*/
 	background-repeat:no-repeat;
-	background-size:cover;
+	background-size:contain;
 	background-position:center center;
 }
 .project-arrows {
 	display:table-cell; 
 	vertical-align:middle; 
 	font-size:6em;
+	/*opacity:0;*/
 	cursor:pointer;
 }
-/*#inner-display {
+#inner-display {
 	position:absolute;
-	top:150px;
+	top:50%;
 	left:50%;
-	margin-left:-38%;
-	height:500px;
-	width:76%;
+	height:465px;
+	width:823px;
+	margin-top:-339px;
+	margin-left:-410px;
 	background-image:url(../images/beam.jpg);
-	background-attachment:fixed;
+	/*background-attachment:fixed;*/
 	background-repeat:no-repeat;
 	background-size:cover;
 	background-position:center center;
-}*/
+}
 /* 2 Columns for ABOUT ME page */
 /*@media (max-width: 791px) {
 	.aboutme-item-container {
