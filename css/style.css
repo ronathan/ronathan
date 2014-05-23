@@ -422,12 +422,30 @@ p {
 	width:823px;
 	margin-top:-339px;
 	margin-left:-410px;
-	background-image:url(../images/beam.jpg);
 	/*background-attachment:fixed;*/
 	background-repeat:no-repeat;
 	background-size:cover;
 	background-position:center center;
+
+	-webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
+.project1 {
+	background-image:url(../images/desktop-screen-shot.png);
+}
+.project2 {
+	background-image:url(../images/beam.jpg);
+}
+.project3 {
+	background-image:url(../images/landingpage.jpg);
+}
+.project4 {
+	background-image:url(../images/landingpage.png);
+	background-repeat:repeat;
+}
+
 /* 2 Columns for ABOUT ME page */
 /*@media (max-width: 791px) {
 	.aboutme-item-container {
