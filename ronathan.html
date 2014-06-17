@@ -10,7 +10,7 @@
 	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
 </head>
 
-<body>
+<body class="nl-blurred">
 
 <div class="ronathan-container">
 
@@ -226,22 +226,41 @@
 	</div>
 
 	<div id="contact" class="grid-container" style="background-color:#404457;">
-		<div class="grid-1" style="height:100%; display:table;">
-			<h1 id="project-left-arrow" class="project-arrows" style="text-align:right;"> < </h1>
-		</div>
-
-		<div class="grid-10" style="height:100%; background-color:#404457; display:table; vertical-align:middle;">
-			
-			<div id="projects-display">
-				<div id="inner-display" class="project1">
+		<div class="container demo-1">
+			<div class="main clearfix">
+					<form id="nl-form" class="nl-form">
+						I feel to eat 
+						<select>
+							<option value="1" selected>any food</option>
+							<option value="2">Indian</option>
+							<option value="3">French</option>
+							<option value="4">Japanese</option>
+							<option value="2">Italian</option>
+						</select>
+						<br />in a
+						<select>
+							<option value="1" selected>standard</option>
+							<option value="2">fancy</option>
+							<option value="3">hip</option>
+							<option value="4">traditional</option>
+							<option value="2">romantic</option>
+						</select>
+						restaurant
+						<br />at 
+						<select>
+							<option value="1" selected>anytime</option>
+						 	<option value="1">7 p.m.</option>
+						 	<option value="2">8 p.m.</option>
+						 	<option value="3">9 p.m.</option>
+						</select>
+						in <input type="text" value="" placeholder="any city" data-subline="For example: <em>Los Angeles</em> or <em>New York</em>"/>
+						<div class="nl-submit-wrap">
+							<button class="nl-submit" type="submit">Find a restaurant</button>
+						</div>
+						<div class="nl-overlay"></div>
+					</form>
 				</div>
 			</div>
-
-		</div>
-
-		<div class="grid-1" style="background-color:#404457; height:100%; display:table;">
-			<h1 id="project-right-arrow" class="project-arrows" style="text-align:left;"> > </h1>
-		</div>
 	</div>
 
 </div>
@@ -249,6 +268,9 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 <script src="js/main.js"></script>
 <script src="js/waypoints.min.js"></script>
+<script>
+			var nlform = new NLForm( document.getElementById( 'nl-form' ) );
+		</script>
 
 </body>
 
