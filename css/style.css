@@ -1,4 +1,5 @@
 * {
+	-webkit-box-sizing:border-box;
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 }
@@ -125,49 +126,17 @@ p {
 .aboutme-item-container {
 	position:absolute; 
 	height:auto; 
-	max-width: 714px; 
+	max-width: 66em;
 	top:50%; 
 	left: 50%; 
 	margin-top:-336px; 
-	margin-left:-357px;
-	/*-webkit-transform: translateX(200px);
-  -ms-transform: translateX(200px);
-  -o-transform: translateX(200px);
-  transform: translateX(200px);
-  opacity:0;
-  -webkit-animation: start 2s ease-out forwards;
-  -moz-animation: start 2s ease-out forwards;
-  -o-animation: start 2s ease-out forwards;
-  animation: start 2s ease-out forwards;*/
+	margin-left:-33em;
 }
-/*@-webkit-keyframes start{
-	0%{
-		-webkit-transform: translateX(200px);
-    -ms-transform: translateX(200px);
-    -o-transform: translateX(200px);
-    transform: translateX(200px);
-		opacity:0;
-	}
-	50%{
-		opacity:1;
-		-webkit-transform: translateX(0);
-    -ms-transform: translateX(0);
-    -o-transform: translateX(0);
-    transform: translateX(0);
-	}
-	100%{
-		-webkit-transform: translateX(0);
-    -ms-transform: translateX(0);
-    -o-transform: translateX(0);
-    transform: translateX(0);
-		opacity:1;
-	}
-}
-*/.aboutme-item {
+.aboutme-item {
 	position:relative;
 	float:left;
-	height:15em;
-	width:15em;
+	height:20em;
+	width:20em;
 	margin:1em;
 	background-color:#000;
 	background-position: center center;

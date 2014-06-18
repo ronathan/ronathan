@@ -16,27 +16,6 @@
 
 	<div id="landingPage" class="grid-container landingPage">
 
-		<!-- <div class="grid-4" style="height:100%; position:relative;">
-			<img class="homepage-img" src="images/landing-page-ron2.png"/>
-		</div>
-
-		<div class="grid-7" style="height:100%; position:relative; z-index:10;">
-			<div class="homepage-container">
-				<div class="homepage-text">
-					<h1>
-						Hi there!<br/>
-						I'm Ronald Victorino
-					</h1>
-					<h3>
-						> Junior Dev @NthGenSoftware_<br/> 
-						> HackerYou Cohort Zero_<br/>
-						> Materials Eng Grad_<br/>
-						> Gen-Y Existentialist_<br/>
-						> Bucket List Assassin_<br/>
-					</h3>
-				</div>
-			</div>
-		</div> -->
 		<div class="grid-12" style="height:100%; background-color:rgba(255,255,255, 0.2)">
 			<div style="position:absolute; width:100%; height:auto; top:50%; margin-top:-40px; background-color:rgba(255,255,255, 0.3); padding-top:1em; padding-bottom: 2em;">
 				<center>
@@ -47,6 +26,10 @@
 					</p>
 				</center>
 			</div>
+			<video id="intro-video" width="320" height="180" preload="metadata" loop autoplay style="width:100%; height:100%;">
+				<source src="http://test.nthgensoftware.com/videos/intro.mp4" type="video/mp4">
+				<source src="http://test.nthgensoftware.com/videos/intro.webm" type="video/webm">
+			</video>
 		</div>
 
 <!-- 		<div class="grid-12 navbar" id="navbar">
@@ -61,6 +44,7 @@
 
 	<div id="aboutMe" class="grid-container" style="position:relative;">
 
+					<center><h1>About Me</h1></center>
 
 		<div class="aboutme-item-container">
 
@@ -106,49 +90,6 @@
 					<h3>Bucket List</h3>
 				</div>
 			</div>
-
-			<div class="aboutme-item slideTextLeft">
-				<div class="aboutme-background aboutme-nthgen"></div>
-				<div class="aboutme-text">
-					<h3>NthGen Software</h3>
-				</div>
-			</div>
-
-			<div class="aboutme-item slideTextLeft" style="background-color:#FFE13C; border-color:#FFE13C">
-				<div class="aboutme-background aboutme-journal"></div>
-				<div class="aboutme-text">
-					<h3>Journal</h3>
-				</div>
-			</div>
-
-			<div class="aboutme-item slideTextLeft" style="background-color:#49C6EB; border-color:#49C6EB;">
-				<div class="aboutme-background aboutme-mse"></div>
-				<div class="aboutme-text">
-					<h3>MSE</h3>
-				</div>
-			</div>
-
-<!-- 			<div class="aboutme-item slideTextLeft" style="background-color:#E54B0B">
-				<div class="aboutme-background aboutme-basketball"></div>
-				<div class="aboutme-text">
-					<h2>Sports Junkie</h2>
-				</div>
-			</div>
-			
-			<div class="aboutme-item slideTextLeft" style="background-color:#CF1E24">
-				<div class="aboutme-background aboutme-hackeryou"></div>
-				<div class="aboutme-text">
-					<h2>HackerYou Cohort Zero</h2>
-				</div>
-			</div>
-			
-			<div class="aboutme-item slideTextLeft" style="background-color:#C2C2C2">
-				<div class="aboutme-background aboutme-bucketlist"></div>
-				<div class="aboutme-text">
-					<h2>Bucket List</h2>
-				</div>
-			</div> -->
-
 
 		</div>
 
@@ -206,12 +147,12 @@
 		
 	</div>
 
-	<div id="projects" class="grid-container" style="background-color:#404457;">
+	<div id="projects" class="grid-container" style="background-color:#FFFFFF;">
 		<div class="grid-1" style="height:100%; display:table;">
 			<h1 id="project-left-arrow" class="project-arrows" style="text-align:right;"> < </h1>
 		</div>
 
-		<div class="grid-10" style="height:100%; background-color:#404457; display:table; vertical-align:middle;">
+		<div class="grid-10" style="height:100%; background-color:#FFFFFF; display:table; vertical-align:middle;">
 			
 			<div id="projects-display">
 				<div id="inner-display" class="project1">
@@ -220,42 +161,47 @@
 
 		</div>
 
-		<div class="grid-1" style="background-color:#404457; height:100%; display:table;">
+		<div class="grid-1" style="background-color:#FFFFFF; height:100%; display:table;">
 			<h1 id="project-right-arrow" class="project-arrows" style="text-align:left;"> > </h1>
 		</div>
 	</div>
 
-	<div id="contact" class="grid-container" style="background-color:#FFFFFF;">
-		<div class="container demo-1 grid-7" style="margin:0 auto; padding:80px 40px;">
+	<div id="contact" class="grid-container" style="background-color:#FFFFFF; position:relative;">
+		
+		<div class="container demo-1 grid-7" style="margin:0 auto; padding:80px 40px; min-width:600px;">
 			<div class="main clearfix">
-					<form id="nl-form" class="nl-form">
-						
-						What's up? My name is 
-						<input type="text" value="" placeholder="full name" 
-						data-subline="Enter your name here!"/>.
-						
-						Let's talk about 
-						<select>
-							<option value="1" selected>code</option>
-							<option value="2">jobs</option>
-							<option value="3">life</option>
-							<option value="4">advice</option>
-							<option value="5">sweet nothings</option>
-						</select>.
+				<form id="nl-form" class="nl-form">
+					
+					What's up? My name is 
+					<input type="text" value="" placeholder="full name" 
+					data-subline="Enter your name here!"/>.<br/>
+					
+					Let's talk about 
+					<select>
+						<option value="1" selected>code</option>
+						<option value="2">jobs</option>
+						<option value="3">life</option>
+						<option value="4">advice</option>
+						<option value="5">sweet nothings</option>
+					</select>.
 
-						<br/><br/>
-						E-mail me back at 
-						<input type="text" value="" placeholder="contact info" data-subline="Enter your e-mail here!"/>.
+					<br/><br/>
+					E-mail me back at 
+					<input type="text" value="" placeholder="contact info" data-subline="Enter your e-mail here!"/>.
 
-						<div class="nl-submit-wrap">
-							<button class="nl-submit" type="submit">SUBMIT THIS FORMMMMM!!!</button>
-						</div>
+					<div class="nl-submit-wrap">
+						<button class="nl-submit" type="submit">SUBMIT THIS FORMMMMM!!!</button>
+					</div>
 
-						<div class="nl-overlay"></div>
+					<div class="nl-overlay"></div>
 
-					</form>
-				</div>
+				</form>
 			</div>
+		</div>
+
+		<div class="grid-12" style="position:absolute;  height:80px; bottom:0px; background-color:#000;">
+			Twitter Google+ LinkedIn GitHub
+		</div>
 	</div>
 
 </div>
